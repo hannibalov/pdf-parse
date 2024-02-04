@@ -18,9 +18,10 @@ const FileInput = () => {
 
       // Load the PDF
       const pdfLoader = new WebPDFLoader(blob);
+      console.log("PDF loader ok", pdfData);
       const docs = await pdfLoader.load();
 
-      // Now you can use pdfDocument
+      // // Now you can use pdfDocument
       console.log("PDF Loaded:", docs);
     }
   };
